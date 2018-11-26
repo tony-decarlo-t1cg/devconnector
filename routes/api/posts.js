@@ -17,7 +17,7 @@ const validatePostInput = require('../../validation/post');
 // @access  Public
 router.get('/test', (req, res) => res.json({ msg: 'Posts Works' }));
 
-// @route   GET api/posts
+// @route   GET api/posts/:id
 // @desc    Get posts by id
 // @access  Public
 router.get('/:id', (req, res) => {
@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
     );
 });
 
-// @route   GET api/posts/:id
+// @route   GET api/posts
 // @desc    Get posts
 // @access  Public
 router.get('/', (req, res) => {
